@@ -7,3 +7,4 @@ pit_data.csv
 shot_data.csv
 match_data.db-shm
 match_data.db-wal
+match_data_all.db

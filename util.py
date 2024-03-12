@@ -4,13 +4,13 @@ import os.path
 
 def convertDataAfterMatch(match: int):
     conn = sqlite3.connect("match_data.db")
-    query = f"SELECT * FROM ScoutData WHERE MatchNumber > {match}"
+    query = f"SELECT * FROM MatchData WHERE MatchNumber > {match}"
     convertSQLToCSVFile(conn, query, f"match_data_after_{match}.csv")
     conn.close()
 
 def convertAllMatchData():
     conn = sqlite3.connect("match_data.db")
-    query = "SELECT * FROM ScoutData"
+    query = "SELECT * FROM MatchData"
     convertSQLToCSVFile(conn, query, "match_data_all.csv")
     conn.close()
 

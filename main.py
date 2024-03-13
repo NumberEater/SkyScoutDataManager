@@ -1,4 +1,4 @@
-from util import *
+import os
 import sqlite3
 import csv
 

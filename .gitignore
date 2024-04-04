@@ -1,10 +1,7 @@
 .DS_Store
 .vscode
 __pychache__/
-match_data.db
-match_data.csv
 pit_data.csv
 shot_data.csv
-match_data.db-shm
-match_data.db-wal
-match_data_all.db
+match_data*
+*.csv

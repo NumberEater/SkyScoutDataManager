@@ -10,7 +10,7 @@ for i in range(numTablets):
     input("Press enter for next tablet.")
     filename = f"match_data_{i}.db"
     while True:
-        os.system(f"./adb -d shell \"run-as org.skylinerobotics.skyscout cat databases/match_data.db\" > {filename}")
+        os.system(f"adb.exe -d shell \"run-as org.skylinerobotics.skyscout cat databases/match_data.db\" > {filename}")
         if not (os.path.exists(filename) and os.path.getsize(filename) > 0):
             input("Pull failed. Check connection. Press enter when ready.")
         else:
